@@ -73,6 +73,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+   text-align: -webkit-center;
 /*  background: #a64bf4;
   background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
   background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
@@ -105,13 +106,13 @@ iframe {
      color: white;
      background: #fd4040;
      padding: 15px;
-     width: 297px;
+     width: 413px;
      border: 1px solid #fd4040;
      border-radius: 100px;
     /* left: 50%;
      transform: translateX(-50%);*/
      letter-spacing: 12px;
-    margin-bottom: 50px;
+    margin-bottom: -120px;
    
     
  }
