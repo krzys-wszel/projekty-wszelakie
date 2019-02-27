@@ -203,13 +203,17 @@
      z-index: 1000;
  }
 
- .menu_items li {
-     height: 60px;
-     margin-bottom: 30px;
-     transform: translateX(-300px);
-     transition: transform .7s 0s cubic-bezier(1.000, 0.005, 0.240, 1.000);
-     ;
- }
+ .menu_items li {      
+              
+    transform: translateX(-300px);
+    transition: transform .7s 0s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+    background: url('/Images/back2.svg');
+    font-size: 22px;
+     width: fit-content;
+    border-radius: 50px;
+  
+}
+ 
 
  /*.menu_items li:nth-child(2) {
      margin-left: 30px;
@@ -225,7 +229,7 @@
      margin-left: 60px;
  }
 */
- .menu_items a {
+ .menu_items li a {
      display: block;
      text-decoration: none;
      text-transform: uppercase;
@@ -233,7 +237,8 @@
      color: darken(#f0f0f0, 30%);
      transition: color 2s;
      color: #fd4040;
-     font-weight: bolder;
+     
+     padding: 10px;
  }
 
  /*.menu_items .icon {
@@ -381,22 +386,7 @@
      content: "";
  }*/
 
- /*.navbar-toggle {
-     position: relative;
-     /* float: left;*/
- /*   padding: 9px 10px;
-     margin-top: 8px;
-     margin-right: 15px;
-     margin-bottom: 8px;
-     background-color: transparent;
-     background-image: none;
-     border: 1px solid transparent;
-     border-radius: 4px;
- }
-*/
- /*.navbar-toggle p {
-     color: white;
- }*/
+  
 
  /*---------------------------------------
   BUTTONS               
@@ -567,7 +557,7 @@
 
  #home {
 
-     padding-top: 400PX;
+     padding-top: 400px;
      font-weight: 700;
      background: url('../Images/glowna1.jpg') center center fixed;
      background-size: cover;
@@ -584,7 +574,7 @@
 
  #home p {
      font-size: 1.5em;
-     line-height: 1.3em;
+     line-height: 1.9em;
      color: white;
  }
 
@@ -674,7 +664,7 @@ TEAM
     position: relative;
 }
 .team .pic{
-    width: 22%;
+    width: 42%;
     padding: 20px 0;
     margin: 0 6% 0 2%;
     float: left;

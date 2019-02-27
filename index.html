@@ -361,22 +361,22 @@
 
 
             <div class="team">
-                
-                   <div class="container">
-                   
-                        <div class="row" style="justify-content: center;">
+
+                <div class="container">
+
+                    <div class="row" style="justify-content: center;">
                         <h1 class="team_h1">
-                    nasz zespół
-                </h1>
+                            nasz zespół
+                        </h1>
                         <div class="col-md-12">
-                            <div id="team-slider" class="owl-carousel">
-                                <div class="team">
+                          
+                                <div id="team-slider" class="owl-carousel">
+                               
+                                   
+                                     <div class="team">
                                     <div class="pic">
                                         <img src="images/team_1.jpg" alt="">
                                     </div>
-
-                                   
-
                                     <div class="team-content">
                                         <h3 class="title">Krzysztof Wszelaki</h3>
                                         <span class="post">web developer</span>
@@ -385,13 +385,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="team">
+                                
+                                   
+                                   
+                                   <div class="team">
                                     <div class="pic">
                                         <img src="images/team_2.jpg" alt="">
                                     </div>
-
-                                  
-
                                     <div class="team-content">
                                         <h3 class="title">Anna Wszelka</h3>
                                         <span class="post">Web Designer</span>
@@ -400,7 +400,10 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                          
+                            
+                              
+                                  </div>
                         </div>
                     </div>
                 </div>
@@ -639,96 +642,19 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-        // left navigation
-        var $page = $('.page');
-
-        $('.menu_toggle').on('click', function() {
-            $page.toggleClass('shazam');
-        });
-        $('.content').on('click', function() {
-            $page.removeClass('shazam');
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("#team-slider").owlCarousel({
-                items: 1,
-                itemsDesktop: [1000, 1],
-                itemsDesktopSmall: [979, 1],
-                itemsTablet: [768, 1],
-                margin: 10,
-                pagination: false,
-                navigation: true,
-                navigationText: ["", ""],
-                autoPlay: true
-            });
-        });
-    </script>
-
-
-
-
-    <script>
-        //testimontial slider
-
-        $(document).ready(function() {
-            $("#testimonial-slider").owlCarousel({
-                items: 1,
-                itemsDesktop: [1000, 1],
-                itemsDesktopSmall: [979, 1],
-                itemsTablet: [767, 1],
-                pagination: false,
-                transitionStyle: "fade",
-                navigation: true,
-                navigationText: ["", ""],
-                autoPlay: true
-            });
-        });
-    </script>
-
-    <script>
-        //scrol top
-
-        $(document).ready(() => {
-            let windw = $(window);
-
-
-            let topScroll = $('.top-scroll');
-            topScroll.click(e => {
-                window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            });
-
-            let showScrollTop = () => {
-                if (windw.scrollTop() > 300) {
-                    topScroll.addClass('active');
-                } else {
-                    topScroll.removeClass('active');
-                }
-            };
-
-            showScrollTop();
-            windw.scroll(e => {
-                showScrollTop();
-            });
-        });
-    </script>
-
-    <script src="js/select2.min.js"></script>
-    <script>
-        //contact dropdown
-        $(".selection-2").select2({
-            minimumResultsForSearch: 20,
-            dropdownParent: $('#dropDownSelect1')
-        });
-    </script>
+     <script src="js/select2.min.js"></script>
     <script src="js/main.js"></script>
+    
+
+
+
+    
+
+   
+
+   
+   
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
@@ -741,6 +667,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
+
     </script>
 
 
