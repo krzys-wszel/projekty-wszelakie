@@ -651,147 +651,145 @@
      padding-bottom: 100px;
  }
 
- /*---------------------------------------
-   TEAM             
------------------------------------------*/
- .team {
-     padding-top: 100px;
-
- }
-
- .our-team {
-     text-align: center;
-     padding-top: 100px;
-     padding-bottom: 100px;
- }
-
- .our-team .pic {
-     border-radius: 50%;
-     overflow: hidden;
-     position: relative;
- }
-
- .our-team .pic:before,
- .our-team .pic:after {
-     content: "";
-     width: 100%;
-     height: 100%;
-     border-radius: 50%;
-     border: 13px solid #e6e5e5;
-     position: absolute;
-     top: 0;
-     left: 0;
- }
-
- .our-team .pic:after {
-     border-color: #fd4040 #e6e5e5 #e6e5e5 #fd4040;
-     z-index: 1;
-     transform: rotate(-10deg);
-     transition: all 0.5s ease 0s;
- }
-
- .our-team:hover .pic:after {
-     transform: rotate(350deg);
- }
-
- .our-team img {
-     width: 100%;
-     height: auto;
- }
-
- .our-team .title {
-     font-size: 26px;
-     font-weight: bold;
-     color: #222;
-     padding-bottom: 10px;
-     margin: 15px 0 10px 0;
-     position: relative;
- }
-
- .our-team .title:after {
-     content: "";
-     width: 30px;
-     height: 2px;
-     background: #222;
-     margin: 0 auto;
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
- }
-
- .our-team .post {
-     display: block;
-     font-size: 16px;
-     font-style: italic;
-     color: #777;
- }
-
- .our-team .icon {
-     list-style: none;
-     padding: 0;
-     margin: 10px 0 0 0;
- }
-
- .our-team .icon li {
-     display: inline-block;
- }
-
- .our-team .icon li a {
-     display: inline-block;
-     width: 30px;
-     height: 30px;
-     line-height: 30px;
-     border-radius: 50%;
-     background: #e0e0e0;
-     font-size: 14px;
-     color: #999;
-     margin-right: 5px;
-     transition: all 0.3s ease-out 0s;
- }
-
- .our-team .icon li a:hover {
-     background: #fd4040;
-     color: #fff;
- }
-
- @media only screen and (max-width: 990px) {
-     .our-team {
-         margin-bottom: 30px;
-     }
- }
-
- .our-team .description {
-     padding-top: 20px;
-     border-radius: 20px;
-     font-size: 15px;
-     color: #fd4040;
 
 
+/*-----------
+TEAM
+-----------------*/
 
- }
+.team { 
+    background: url('/Images/back2.svg');
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+.team_h1 {
+	text-align: -webkit-center;
+    letter-spacing: 12px;
+    background: #fd4040;
+    width: 294px;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    position: relative;
+}
+.team .pic{
+    width: 22%;
+    padding: 20px 0;
+    margin: 0 6% 0 2%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.team .pic:before,
+.team .pic:after{
+    content: "";
+    width: 130px;
+    height: 150px;
+    background: #fd4040;
+    position: absolute;
+    z-index: -1;
+}
+.team .pic:before{
+    top: 0;
+    right: -20px;
+}
+.team .pic:after{
+    bottom: 0;
+    left: -20px;
+}
+.team .pic img{
+    width: 100%;
+    height: auto;
+    border: 3px solid #fd4040;
+}
+.team .team-content{
+    width: 70%;
+    float: right;
+}
+.team .title{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color:  #fd4040;
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 65px;
+    padding-left: 15px;
+}
+.team .post{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    color:  #fd4040;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+.team .description{
+    font-size: 16px;
+    color:  #fd4040;
+    padding: 0 15px;
+    margin: 0;
+    position: relative;
+}
+.team .description:before,
+.team .description:after{
+    font-family: "FontAwesome"; font-weight: 900;
+    font-size: 17px;
+    color: #fd4040;
+    position: relative;
+}
+.team .description:before{
+    content: "\f100";
+    margin-right: 5px;
+    top: 0;
+    left: 0;
+}
+.team .description:after{
+    content: "\f101";
+    margin-left: 5px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+ 
+ 
+.team .owl-theme .owl-controls .owl-buttons div {
+    font-size: 40px;
+    background: transparent;
+    /* opacity: 0.5; */
+    top: 290px;
+    color: #fd4040;
+   /* display: none;*/
+}
 
- .team {
-     text-align: center;
-     background: url('../Images/back2.svg');
-
- }
-
- .team h1 {
-     position: relative;
-     font-size: 25px;
-     color: white;
-     background: #fd4040;
-     padding: 15px;
-     width: 360px;
-     border: 1px solid #fd4040;
-     border-radius: 100px;
-     left: 50%;
-     transform: translateX(-50%);
-     letter-spacing: 12px;
- }
-
-
+@media only screen and (max-width: 990px){
+    .team{ text-align: center; }
+    .team .pic{
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+    }
+    .team .pic:before,
+    .team .pic:after{
+        width: 80px;
+        height: 100px;
+    }
+    .team .team-content{
+        width: 100%;
+        float: none;
+    }
+    .team .title{
+        padding: 15px 0 0 0;
+    }
+    .team .post{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+ 
+}
 
  /*-------------------------------
 GALERIA
@@ -1021,7 +1019,7 @@ TESTIMONTIALS
  .contact {
      padding-top: 50px;
      padding-bottom: 100px;
-     background: url(/Images/back2.svg);
+     background: url(../Images/back2.svg);
  }
 
  .contact .col-xl-8 {
@@ -1112,7 +1110,7 @@ TESTIMONTIALS
 .slider::before, .slider::after {
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 200px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -1202,18 +1200,17 @@ TESTIMONTIALS
      }
 
      .k_banner {
-
-
          width: 100%;
          background: url(../Images/back2.svg);
      }
 
      #home {
-
          text-align: center;
-
      }
-
+.home-text {
+	top: 50%;
+}
+    
      .logo img {
          opacity: 0;
      }
